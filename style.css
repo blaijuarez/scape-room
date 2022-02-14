@@ -1,0 +1,139 @@
+html,
+body,
+header {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("assets/cabecera.jpeg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  left: 8vw;
+  top: 66vh;
+  width: 333px;
+}
+
+section {
+  position: absolute;
+  right: 5vw;
+  top: 15vh;
+  width: 600px;
+}
+
+h1,
+li {
+  color: #a67a01;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: fantasy;
+  line-height: 45px;
+}
+
+p,
+li {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #fff;
+}
+
+.textoMensajero {
+  position: relative;
+  font-size: xX-large;
+  font-style: italic;
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+.comillas {
+  position: absolute;
+  margin-left: -32px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10vh;
+  left: 0;
+  width: 100vw;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: center;
+}
+
+footer ul li {
+  margin-left: 54px;
+  list-style: none;
+  position: relative;
+  padding-left: 60px;
+}
+
+footer ul li:first-child {
+  margin-left: 0;
+}
+
+footer ul li.fase-preguntas:before {
+  content: "";
+  width: 115px;
+  height: 100px;
+  position: absolute;
+  background-image: url(assets/icono-sombrero.png);
+  background-size: cover;
+  background-position: center;
+  left: -30px;
+  top: 25%;
+  transform: translateY(-50%);
+}
+
+footer ul li.fase-fotos:before {
+  content: "";
+  width: 115px;
+  height: 100px;
+  position: absolute;
+  background-image: url(assets/icono-gafas.png);
+  background-size: cover;
+  background-position: center;
+  left: -34px;
+  top: 25%;
+  transform: translateY(-50%);
+}
+
+footer ul li.fase-historia:before {
+  content: "";
+  width: 115px;
+  height: 100px;
+  position: absolute;
+  background-image: url(assets/icono-torre.png);
+  background-size: cover;
+  background-position: center;
+  left: -28px;
+  top: 25%;
+  transform: translateY(-50%);
+}
+
+footer ul li span {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 4px 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}

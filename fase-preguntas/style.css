@@ -4,18 +4,19 @@
 }
 
 body {
-  background: #0c1514;
+  background-image: url("bg.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
   color: #fff;
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
   text-align: center;
-  height: 300px;
-  background-image: url(cabecera.png);
-  background-attachment: local;
-  background-position: -285px -244px;
-  background-size: auto;
+  height: 126px;
   position: relative;
+  margin-top: 26vh;
 }
 
 header h1 {
@@ -27,8 +28,9 @@ header h1 {
   font-style: italic;
   text-transform: capitalize;
   font-size: 450%;
-  color: #ffffff;
-  text-shadow: black 1px 0px 6px;
+  font-family: fantasy;
+  line-height: 45px;
+  color: #a67a01;
 }
 
 .faded {
@@ -36,7 +38,7 @@ header h1 {
 }
 
 #quiz-counter {
-  color: cyan;
+  color: #a67a01;
   font-size: x-large;
 }
 .quiz-container {

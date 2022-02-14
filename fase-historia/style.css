@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0c1514;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  height: 300px;
+  background-image: url(cabecera.png);
+  background-attachment: local;
+  background-position: -285px -244px;
+  background-size: auto;
+  position: relative;
+}
+
+header h1 {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 450%;
+  color: #ffffff;
+  text-shadow: black 1px 0px 6px;
+}
+
+.faded {
+  color: #777;
+}
+
+#quiz-counter {
+  color: cyan;
+  font-size: x-large;
+}
+.quiz-container {
+  padding: 0.25em;
+  max-width: 650px;
+  margin: 1em auto;
+}
+
+#questions {
+  margin-top: 40px;
+}
+
+.quiz-container a {
+  text-decoration: none;
+  color: #333;
+}
+
+#quiz-header,
+#quiz-start-screen,
+#quiz-results-screen,
+#quiz-counter {
+  text-align: center;
+  margin-top: 4vh;
+}
+
+#results-screen {
+  text-align: center;
+}
+
+.question {
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+
+.answers {
+  list-style: none;
+  padding: 0;
+}
+
+.answers li a {
+  border-radius: 8px;
+  display: block;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  background: #fff;
+}
+
+.answers a.correct {
+  background: #090;
+}
+.answers a.incorrect {
+  background: #c00;
+}
+
+.answers a.correct,
+.answers a.incorrect {
+  color: #fff;
+}
+
+#quiz-controls {
+  color: rgb(228, 228, 228);
+  padding: 0.25em 0.5em 0.5em;
+  text-align: center;
+}
+
+#quiz-response {
+}
+#quiz-results {
+  font-size: 1.25em;
+  color: cyan;
+}
+
+#quiz-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#quiz-buttons a,
+.quiz-container .quiz-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #88449a;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#quiz-restart-btn {
+  margin-top: 30px;
+}
+
+/* Quiz State Overrides */
+
+.quiz-results-state #quiz-controls {
+  background: none;
+  padding: 0;
+}
+.quiz-results-state #quiz-buttons a {
+  background: #88449a;
+  color: #fff;
+}
+
+#siguienteNivel {
+  display: none;
+}
