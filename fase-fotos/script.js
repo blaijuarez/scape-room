@@ -1,3 +1,14 @@
+// Get the modal
+function final() {
+  sessionStorage.setItem(
+    "codigos",
+    JSON.stringify({
+      fasefotos: { codigo: "2WD92", link: "fase-fotos" },
+    })
+  );
+  $("#myModal").show();
+}
+
 $(function () {
   var idx,
     idxLarge = -1;
@@ -417,9 +428,3 @@ $(function () {
     !fotos && shuffle();
   }
 });
-
-// Get the modal
-var modal = document.getElementById("myModal");
-function final() {
-  modal.style.display = "block";
-}

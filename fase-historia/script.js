@@ -1,5 +1,15 @@
+function _exito() {
+  sessionStorage.setItem(
+    "codigos",
+    JSON.stringify({
+      faseHistoria: { codigo: "3QJ05", link: "fase-historia" },
+    })
+  );
+  $("#myModal").show();
+}
+
 $("#quiz").quiz({
-  finishCallback: () => $("#myModal").show(),
+  finishCallback: _exito,
   resultsScreen: "#results-screen",
   counter: true,
   counterFormat: "Pregunta %current de %total",
