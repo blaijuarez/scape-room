@@ -12,22 +12,25 @@ body {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
+  object-fit: cover;
   width: 100vw;
   height: 100vh;
 }
 
-header {
-  position: fixed;
-  left: 8vw;
-  top: 66vh;
-  width: 333px;
+.wrapper {
+  width: 80%;
+  height: 100vh;
+  position: relative;
+  margin: auto;
 }
 
 section {
   position: absolute;
-  right: 5vw;
-  top: 15vh;
-  width: 600px;
+  width: 33vw;
+  height: 75vh;
+  top: 5vh;
+  bottom: 20vh;
+  right: 0;
 }
 
 h1,
@@ -36,14 +39,14 @@ li {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4vw;
+  line-height: 3.7vw;
   font-family: fantasy;
-  line-height: 45px;
 }
 
 p,
 li {
-  font-size: 1.3rem;
+  font-size: 1.3vw;
 }
 
 p {
@@ -52,8 +55,8 @@ p {
 
 .textoMensajero {
   position: relative;
-  font-size: xX-large;
   font-style: italic;
+  font-size: 2.2vw;
   margin-top: -40px;
   margin-bottom: 50px;
 }
@@ -65,9 +68,9 @@ p {
 
 footer {
   position: fixed;
-  bottom: 10vh;
-  left: 0;
   width: 100vw;
+  bottom: 5vh;
+  left: 0;
 }
 
 footer ul {
@@ -133,7 +136,7 @@ footer ul li span {
   border: 1px solid #fff;
   padding: 4px 15px;
   border-radius: 8px;
-  font-size: 1.1rem;
+  font-size: 1.2vw;
   text-transform: uppercase;
 }
 
