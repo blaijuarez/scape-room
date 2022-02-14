@@ -10,8 +10,8 @@ h3 {
 body {
   background-image: url("../assets/bg-fotos.jpeg");
   background-attachment: fixed;
-  background-repeat: repeat;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
   font-size: 12px;
   overflow: hidden;
