@@ -7,7 +7,8 @@ $(document).ready(function () {
     element && (element.innerHTML = codigo);
   });
 
-  $("footer ul li:not([hecho])").each(function (_, element) {
+  var elementos = $("footer ul li:not([hecho])");
+  elementos.each(function (_, element) {
     var link = `/${element.dataset.link}/`;
     console.log(link, element);
 
@@ -15,4 +16,11 @@ $(document).ready(function () {
       document.location.href = link;
     });
   });
+
+  if (!elementos.size()) {
+    $("body").css({ "background-image": 'url("assets/cabecera2.jpeg")' });
+    $("footer ul").fadeOut(1800, function () {
+      $("#mensajeFinal").fadeIn();
+    });
+  }
 });

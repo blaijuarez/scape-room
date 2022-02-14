@@ -72,6 +72,7 @@ footer {
   width: 100vw;
   bottom: 5vh;
   left: 0;
+  text-align: center;
 }
 
 footer ul {
@@ -143,4 +144,28 @@ footer ul li span {
 
 footer ul li:not([hecho]) {
   cursor: pointer;
+}
+
+#mensajeFinal,
+#mensajeFinal:hover,
+#mensajeFinal:visited,
+#mensajeFinal:link {
+  color: #fff;
+}
+
+#mensajeFinal:hover {
+  color: #a67a01;
+  background-color: #fff;
+}
+
+#mensajeFinal {
+  padding: 11px 30px;
+  font-size: 1.3vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #a67a01;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
 }
