@@ -1,8 +1,10 @@
 // Get the modal
 function final() {
+  const codigos = JSON.parse(sessionStorage.getItem("codigos") || "{}");
   sessionStorage.setItem(
     "codigos",
     JSON.stringify({
+      ...codigos,
       fasefotos: { codigo: "2WD92", link: "fase-fotos" },
     })
   );

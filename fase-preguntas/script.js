@@ -1,7 +1,9 @@
 function _exito() {
+  const codigos = JSON.parse(sessionStorage.getItem("codigos") || "{}");
   sessionStorage.setItem(
     "codigos",
     JSON.stringify({
+      ...codigos,
       fasepreguntas: { codigo: "1GR46", link: "fase-preguntas" },
     })
   );

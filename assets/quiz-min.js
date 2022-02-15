@@ -102,9 +102,8 @@
           if (g === i) {
             c.addClass("correct");
             d = f[h].correctResponse;
-            a("#quiz-next-btn").show();
-            a("#quiz-restart-btn").hide();
             n++;
+            a("#quiz-restart-btn").hide();
           } else if (
             (c.addClass("incorrect"),
             (d = f[h].incorrectResponse),
