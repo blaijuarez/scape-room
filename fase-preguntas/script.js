@@ -150,7 +150,7 @@ $("#quiz").quiz({
       incorrectResponse: "",
     },
     {
-      q: "País andino sin litoral",
+      q: "País andí sense litoral",
       options: ["Ecuador", "Perú", "Bolívia"],
       correctIndex: 2,
       correctResponse: "",

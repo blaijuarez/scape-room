@@ -104,6 +104,7 @@
             d = f[h].correctResponse;
             n++;
             a("#quiz-restart-btn").hide();
+            e.methods.nextQuestion();
           } else if (
             (c.addClass("incorrect"),
             (d = f[h].incorrectResponse),
@@ -113,9 +114,11 @@
           } else {
             a("#quiz-restart-btn").show();
             a("#quiz-next-btn").hide();
+            a("#quiz-controls").fadeIn();
           }
-          a("#quiz-response").html(d),
-            a("#quiz-controls").fadeIn(),
+          // a("#quiz-response").html(d),
+          // a("#quiz-controls").fadeIn(),
+          ++m,
             "function" == typeof e.options.answerCallback &&
               e.options.answerCallback(m, g === i);
         }
@@ -129,8 +132,10 @@
             .show()
             .addClass("active-question"),
           a("#quiz-controls").hide(),
-          ++m === g &&
-            (a("#quiz-next-btn").hide(), a("#quiz-finish-btn").show()),
+          m === g &&
+            (a("#quiz-next-btn").hide(),
+            a("#quiz-finish-btn").show(),
+            e.methods.finish()),
           e.methods.updateCounter(),
           "function" == typeof e.options.nextCallback &&
             e.options.nextCallback();
